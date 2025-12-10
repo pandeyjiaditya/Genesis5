@@ -121,6 +121,8 @@ function App() {
           <FAQ />
         </div>
         
+        <Sponsors />
+        
         <Footer />
       </div>
     </>

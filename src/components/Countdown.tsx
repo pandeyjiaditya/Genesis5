@@ -208,13 +208,17 @@ export function Countdown({ targetDate, videoSrc }: Props) {
           }
 
           .countdown-date {
-            font-size: 1.125rem;
+            font-size: 1rem;
           }
         }
 
         @media (max-width: 640px) {
           .countdown-title {
             font-size: 1.5rem;
+          }
+          
+          .countdown-date {
+            font-size: 0.875rem;
           }
         }
       `}</style>
@@ -227,16 +231,16 @@ export function Countdown({ targetDate, videoSrc }: Props) {
         </h2>
         <p className="countdown-date font-[Asset] text-[#60a5fa]">February 14, 2026</p>
         
-        <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+        <div className="grid grid-flow-col gap-3 sm:gap-5 text-center auto-cols-max justify-center px-2">
           <div 
-            className="flex flex-col p-4 rounded-2xl border backdrop-blur-sm"
+            className="flex flex-col p-3 sm:p-4 rounded-xl sm:rounded-2xl border backdrop-blur-sm"
             style={{
               background: 'linear-gradient(135deg, rgba(38, 38, 38, 0.5) 0%, rgba(23, 23, 23, 0.6) 100%)',
               borderColor: 'rgba(59, 130, 246, 0.3)',
               boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05)'
             }}
           >
-            <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl">
+            <span className="countdown font-mono text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
               <span 
                 style={{ '--value': timeLeft.days.toString().padStart(2, '0'), color: '#93c5fd' } as React.CSSProperties} 
                 aria-live="polite" 
@@ -245,17 +249,17 @@ export function Countdown({ targetDate, videoSrc }: Props) {
                 {timeLeft.days.toString().padStart(2, '0')}
               </span>
             </span>
-            <span className="text-neutral-400 mt-2 text-sm md:text-base uppercase tracking-wider">days</span>
+            <span className="text-neutral-400 mt-1 sm:mt-2 text-xs sm:text-sm md:text-base uppercase tracking-wider">days</span>
           </div>
           <div 
-            className="flex flex-col p-4 rounded-2xl border backdrop-blur-sm"
+            className="flex flex-col p-3 sm:p-4 rounded-xl sm:rounded-2xl border backdrop-blur-sm"
             style={{
               background: 'linear-gradient(135deg, rgba(38, 38, 38, 0.5) 0%, rgba(23, 23, 23, 0.6) 100%)',
               borderColor: 'rgba(59, 130, 246, 0.3)',
               boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05)'
             }}
           >
-            <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl">
+            <span className="countdown font-mono text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
               <span 
                 style={{ '--value': timeLeft.hours.toString().padStart(2, '0'), color: '#93c5fd' } as React.CSSProperties} 
                 aria-live="polite" 
@@ -264,17 +268,17 @@ export function Countdown({ targetDate, videoSrc }: Props) {
                 {timeLeft.hours.toString().padStart(2, '0')}
               </span>
             </span>
-            <span className="text-neutral-400 mt-2 text-sm md:text-base uppercase tracking-wider">hours</span>
+            <span className="text-neutral-400 mt-1 sm:mt-2 text-xs sm:text-sm md:text-base uppercase tracking-wider">hours</span>
           </div>
           <div 
-            className="flex flex-col p-4 rounded-2xl border backdrop-blur-sm"
+            className="flex flex-col p-3 sm:p-4 rounded-xl sm:rounded-2xl border backdrop-blur-sm"
             style={{
               background: 'linear-gradient(135deg, rgba(38, 38, 38, 0.5) 0%, rgba(23, 23, 23, 0.6) 100%)',
               borderColor: 'rgba(59, 130, 246, 0.3)',
               boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05)'
             }}
           >
-            <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl">
+            <span className="countdown font-mono text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
               <span 
                 style={{ '--value': timeLeft.minutes.toString().padStart(2, '0'), color: '#93c5fd' } as React.CSSProperties} 
                 aria-live="polite" 
@@ -283,17 +287,17 @@ export function Countdown({ targetDate, videoSrc }: Props) {
                 {timeLeft.minutes.toString().padStart(2, '0')}
               </span>
             </span>
-            <span className="text-neutral-400 mt-2 text-sm md:text-base uppercase tracking-wider">min</span>
+            <span className="text-neutral-400 mt-1 sm:mt-2 text-xs sm:text-sm md:text-base uppercase tracking-wider">min</span>
           </div>
           <div 
-            className="flex flex-col p-4 rounded-2xl border backdrop-blur-sm"
+            className="flex flex-col p-3 sm:p-4 rounded-xl sm:rounded-2xl border backdrop-blur-sm"
             style={{
               background: 'linear-gradient(135deg, rgba(38, 38, 38, 0.5) 0%, rgba(23, 23, 23, 0.6) 100%)',
               borderColor: 'rgba(59, 130, 246, 0.3)',
               boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05)'
             }}
           >
-            <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl">
+            <span className="countdown font-mono text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
               <span 
                 style={{ '--value': timeLeft.seconds.toString().padStart(2, '0'), color: '#93c5fd' } as React.CSSProperties} 
                 aria-live="polite" 
@@ -302,7 +306,7 @@ export function Countdown({ targetDate, videoSrc }: Props) {
                 {timeLeft.seconds.toString().padStart(2, '0')}
               </span>
             </span>
-            <span className="text-neutral-400 mt-2 text-sm md:text-base uppercase tracking-wider">sec</span>
+            <span className="text-neutral-400 mt-1 sm:mt-2 text-xs sm:text-sm md:text-base uppercase tracking-wider">sec</span>
           </div>
         </div>
       </div>

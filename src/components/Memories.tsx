@@ -88,7 +88,7 @@ function Card({ url, ...props }: any) {
 
 export function Memories() {
   return (
-    <section id="memories" className="relative h-[140vh] overflow-hidden">
+    <section id="memories" className="relative h-[120vh] sm:h-[130vh] md:h-[140vh] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -103,9 +103,9 @@ export function Memories() {
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-20 pointer-events-none"></div>
       
       {/* Title */}
-      <div className="absolute top-24 md:top-32 left-0 right-0 z-30 flex justify-center pointer-events-none px-4">
+      <div className="absolute top-16 sm:top-20 md:top-24 lg:top-32 left-0 right-0 z-30 flex justify-center pointer-events-none px-4">
         <h2 
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wider uppercase text-center"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-wider uppercase text-center"
           style={{
             fontFamily: '"Press Start 2P", cursive',
             color: '#FFD700',
@@ -119,7 +119,7 @@ export function Memories() {
       </div>
       
       {/* 3D Canvas - with padding at bottom for scroll space */}
-      <div className="absolute inset-0 z-10 pb-[40vh]">
+      <div className="absolute inset-0 z-10 pb-[30vh] sm:pb-[35vh] md:pb-[40vh]">
         <style>{`
           #memories {
             overflow: hidden !important;

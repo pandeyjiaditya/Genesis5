@@ -51,7 +51,7 @@ export function About() {
         {/* Main About Section */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-20">
           {/* Pokemon 3D Model */}
-          <div ref={modelRef} className="relative h-64 sm:h-80 md:h-96 lg:h-auto">
+          <div ref={modelRef} className="relative h-80 sm:h-96 md:h-[28rem] lg:h-[32rem]">
             <Pokemon3DModel rotationY={scrollProgress * Math.PI * 2} />
           </div>
 

@@ -42,7 +42,7 @@ interface Pokemon3DModelProps {
 
 const Pokemon3DModelComponent = ({ rotationY = 0 }: Pokemon3DModelProps) => {
   return (
-    <div className="w-full h-72">
+    <div className="w-full h-full">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 50 }}
         style={{ width: '100%', height: '100%' }}
